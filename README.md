@@ -38,11 +38,12 @@ And these are the specific ones:
     legendary item and as such its Quality is 80 and it never alters
 
 ## Proposed Solution
-Following the guidelines, I made changes on UpdateQuality method, without altering the Item class or Items property, as those belong to the
-goblin in the corner who will insta-rage and one-shot you as he doesn't believe in shared code
-ownership.
+Following the guidelines, I made changes on UpdateQuality method, without altering the Item class or
+Items property, as those belong to the goblin in the corner who will insta-rage and one-shot me
+as he doesn't believe in shared code ownership.
 
-The approach aimed o write a maintainable and testable code that could easily expand for future special items without compromising simplicity.
+The approach aimed to write a maintainable and testable code that could easily expand
+for future special items without compromising simplicity.
 For that, I used the Strategy pattern to cover all quality update situations.
 This considerably reduced the condition complexity of the previous version.
 
